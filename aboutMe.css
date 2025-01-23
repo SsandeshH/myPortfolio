@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyContents{
+    height: 450px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.photoSection{
+    margin: 15px;
+    height:400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.photoSection img:hover{
+    background-color: white;
+    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
+}
+
+
+.photoSection img{
+    border-radius: 20%;
+    padding: 10px;
+    height: 390px;
+    width: 290px;
+}
+
+section{
+    margin: 15px;
+    height: 300px;
+    width: 500px;
+    
+}
+
+.exp_hobby{
+    height: 750px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    text-align: center;
+    position: relative;
+}
+
+.expCards{
+    height: 200px;
+    margin-left: 170px;
+    width: 75%;
+    margin-top: 10px;
+    /* background-color: white; */
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+.expPhotos{
+    height: 220px;
+    width: 20%;
+}
+
+.expCards .img1{
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    right: 0;
+}
+
+.expCards .img2{
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+}
+
+.expCards .desctitle{
+    font-size: x-large;
+    height: 30px;
+    width: 70%;
+    padding-top: 30px;
+    margin-left: 30px;
+    text-align:center;
+    color: white;
+}
+
+.expCards .desctitle2{
+    font-size: x-large;
+    height: 30px;
+    width: 60%;
+    padding-top: 30px;
+    margin-left: 30%;
+    text-align:center;
+    color: white;
+}
+
+.expCards .descdata{
+    margin-left: 40px;
+    padding-top: 5px;
+    width: 70%;
+    color: white;
+    height: 60px;
+    font-size: large;
+    list-style: none;
+}
+
+.expCards .descdata2{
+    margin-left: 25%;
+    padding-top: 5px;
+    width: 70%;
+    color: white;
+    height: 60px;
+    font-size: large;
+    list-style: none;
+}
+
+.expCards:hover{
+    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
+}
+
+.expCards i{
+    top: 20px;
+    color: rgb(42, 175, 175);
+    font-size: 150px;
+    position: absolute;
+    left: 50px;
+}
