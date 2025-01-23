@@ -199,7 +199,7 @@ footer #socialLinks{
 }
 
 /* Responsive */
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 515px) {
     .bodyContent{
         height:100%;
         width: auto;
@@ -249,7 +249,7 @@ footer #socialLinks{
     
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 516px) and (max-width: 768px) {
     .bodyContent{
         height:100%;
         width: auto;
