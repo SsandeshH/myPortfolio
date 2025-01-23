@@ -200,7 +200,7 @@ footer #socialLinks{
 }
 
 /* Responsive Stuff */
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 1080px) {
     .bodyContent{
         height:600px;
         width: 100vw;
