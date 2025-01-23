@@ -199,7 +199,66 @@ footer #socialLinks{
 }
 
 /* Responsive */
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 320px) {
+    .bodyContent{
+        height:100%;
+        width: auto;
+        background-color: rgb(9, 9, 9);
+        padding-top: 10px;   
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyContent .intro h1{
+        font-size: 30px;
+        color: white;
+    }
+    .bodyContent .intro p{
+        color: white;
+        font-size: x-large;
+    }
+    .bodyContent .image1{
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 2vh; 
+        left: 5vh;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .bodyContent .image1:hover{
+        border-radius: 50%;
+        height: 255px;
+        width: 255px;
+        z-index: 100;
+        box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
+    }
+
+    .bodyContent .myPhotos{
+        height: 310px;
+        width: auto;     
+        position: relative;
+    }
+    .bodyContent .rotatingBG{
+        display: none;
+    }
+
+    .bodyContent .image2{
+        display: none;
+    }
+
+    .bodyContent .image3{
+        display: none;
+    }
+
+    .bodyContent .intro{
+        width: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    
+}
+@media screen and (min-width:321px) and (max-width: 515px) {
     .bodyContent{
         height:100%;
         width: auto;
@@ -225,8 +284,8 @@ footer #socialLinks{
         height: 250px;
         width: 250px;
         position: absolute;
-        top: 0; 
-        left: 20%;
+        top: 2vh; 
+        left: 8vh;
         z-index: 1;
     }
 
