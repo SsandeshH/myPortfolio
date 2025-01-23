@@ -200,7 +200,7 @@ footer #socialLinks{
 }
 
 /* Responsive Stuff */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1181px) {
     .bodyContent{
         height:600px;
         width: 100vw;
@@ -232,7 +232,7 @@ footer #socialLinks{
         height: 310px;
         width: 310px;
         top: 25px;
-        left: 70px;
+        left: 65px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -263,3 +263,30 @@ footer #socialLinks{
     }
 }
 
+@media screen and (max-width: 375px) {
+    .bodyContent .image1{
+        height: 290px;
+        width: 290px;
+        top: 20px;
+        left: 60px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width: 768px) {
+    .bodyContent .image1{
+        height: 310px;
+        width: 310px;
+        top: 30px;
+        left: 230px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1180px) {
+    .bodyContent .image1{
+        height: 310px;
+        width: 310px;
+        top: 30px;
+        left: 370px;
+    }
+
+}
