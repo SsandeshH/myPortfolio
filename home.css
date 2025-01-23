@@ -268,6 +268,15 @@ footer #socialLinks{
         flex-direction: column;
     }
 
+    .bodyContent .intro h1{
+        font-size: 30px;
+        color: white;
+    }
+    .bodyContent .intro p{
+        color: white;
+        font-size: x-large;
+    }
+
     .bodyContent .rotatingBG{
         display: none;
     }
@@ -285,7 +294,7 @@ footer #socialLinks{
         width: 250px;
         position: absolute;
         top: 2vh; 
-        left: 8vh;
+        left: 10vh;
         z-index: 1;
     }
 
@@ -303,6 +312,14 @@ footer #socialLinks{
         width: auto;
         margin: 0;
         padding: 10px;
+    }
+
+    .bodyContent .image1:hover{
+        border-radius: 50%;
+        height: 255px;
+        width: 255px;
+        z-index: 100;
+        box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
     }
     
     
