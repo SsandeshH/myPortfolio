@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.bodyContents{
+.bodyContents {
     height: 450px;
     width: 100%;
     background-color: rgb(9, 9, 9);
@@ -11,120 +11,194 @@
     justify-content: center;
     position: relative;
 }
-.photoSection{
+
+.photoSection {
     margin: 15px;
-    height:400px;
+    height: 400px;
     width: 300px;
     display: flex;
     justify-content: center;
 }
 
-.photoSection img:hover{
+.photoSection img:hover {
     background-color: white;
-    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224, 77, 16, 0.06) 0px 0px 0px 1px;
 }
 
-
-.photoSection img{
+.photoSection img {
     border-radius: 20%;
     padding: 10px;
     height: 390px;
     width: 290px;
 }
 
-section{
+section {
     margin: 15px;
-    height: 300px;
+    height: auto; 
     width: 500px;
-    
 }
 
-.exp_hobby{
-    height: 750px;
+.exp_hobby {
     width: 100%;
     background-color: rgb(9, 9, 9);
     text-align: center;
     position: relative;
+    padding: 20px 0;
+    height: auto;
 }
 
-.expCards{
-    height: 200px;
-    margin-left: 170px;
+.expCards {
     width: 75%;
-    margin-top: 10px;
-    /* background-color: white; */
-    position: relative;
+    margin: 20px auto;
+    padding: 20px;
     border: 1px solid white;
     border-radius: 10%;
+    box-sizing: border-box; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    height: auto;
+    overflow-wrap: break-word; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
-.expPhotos{
-    height: 220px;
-    width: 20%;
+.expPhotos {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
 }
 
-.expCards .img1{
-    height: 200px;
-    width: 20%;
-    position: absolute;
-    right: 0;
+.expCards .img1,
+.expCards .img2 {
+    width: 50%;
+    max-width: 150px; 
+    height: auto;
+    margin: 10px;
+    position: relative; 
 }
 
-.expCards .img2{
-    height: 200px;
-    width: 20%;
-    position: absolute;
-    left: 0;
-}
-
-.expCards .desctitle{
-    font-size: x-large;
-    height: 30px;
-    width: 70%;
-    padding-top: 30px;
-    margin-left: 30px;
-    text-align:center;
+.expCards .desctitle,
+.expCards .desctitle2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
     color: white;
+    width: 100%;
 }
 
-.expCards .desctitle2{
-    font-size: x-large;
-    height: 30px;
-    width: 60%;
-    padding-top: 30px;
-    margin-left: 30%;
-    text-align:center;
+.expCards .descdata,
+.expCards .descdata2 {
+    font-size: 1rem;
+    margin: 10px 0;
     color: white;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
 }
 
-.expCards .descdata{
-    margin-left: 40px;
-    padding-top: 5px;
-    width: 70%;
-    color: white;
-    height: 60px;
-    font-size: large;
-    list-style: none;
+.expCards:hover {
+    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224, 77, 16, 0.06) 0px 0px 0px 1px;
 }
 
-.expCards .descdata2{
-    margin-left: 25%;
-    padding-top: 5px;
-    width: 70%;
-    color: white;
-    height: 60px;
-    font-size: large;
-    list-style: none;
-}
-
-.expCards:hover{
-    box-shadow: rgba(211, 68, 7, 0.921) 0px 10px 36px 0px, rgba(224,77,16, 0.06) 0px 0px 0px 1px;
-}
-
-.expCards i{
-    top: 20px;
+.expCards i {
     color: rgb(42, 175, 175);
-    font-size: 150px;
-    position: absolute;
-    left: 50px;
+    font-size: 100px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .bodyContents {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .photoSection {
+        margin: 0;
+        height: auto;
+        width: 80%;
+    }
+
+    .photoSection img {
+        height: auto;
+        width: 100%;
+        border-radius: 10%;
+        padding: 5px;
+    }
+
+    section {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    .exp_hobby {
+        height: auto;
+        padding: 20px;
+    }
+
+    .expCards {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    .expCards .desctitle,
+    .expCards .desctitle2 {
+        font-size: medium;
+        width: 100%;
+    }
+
+    .expCards .descdata,
+    .expCards .descdata2 {
+        font-size: medium;
+        width: 100%;
+    }
+
+    .expCards i {
+        font-size: 80px;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bodyContents {
+        padding: 10px;
+    }
+
+    .photoSection {
+        width: 100%;
+    }
+
+    section {
+        font-size: small;
+    }
+
+    .expCards {
+        padding: 10px;
+    }
+
+    .expCards .img1,
+    .expCards .img2 {
+        display: none;
+        width: 100%;
+    }
+
+    .expCards .desctitle,
+    .expCards .desctitle2 {
+        font-size: small;
+    }
+
+    .expCards .descdata,
+    .expCards .descdata2 {
+        font-size: small;
+    }
+
+    .expCards i {
+        font-size: 60px;
+    }
 }
